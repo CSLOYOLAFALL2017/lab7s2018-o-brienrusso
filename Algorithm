@@ -1,0 +1,55 @@
+Programmers: Harrison Russo and Connor O'Brien
+Lab 7
+Due Date: 3/22/18
+
+The first step is to import all the frameworks necessary for the program to run
+    Import the os framework
+    Import the sys framework
+
+Next, we need to define the function to determine if the inputted file is valid.
+    Define the function (validFile):
+        Set the variable movieFile to the message that is outputted to the user.
+        Create a while not loop which makes sure the file exists.
+            Repeat the statement about the movie's file name.
+        Return the movieFile variable
+
+Define a function that opens the file and calculates the profit for each movie.
+    Define the function (profit): with a parameter of openFile.
+        In order to make sure the file exists create a try and except function.
+            We need to set maxProfit to 0.
+            Set maxProfitMovie to "".
+            Start reading the code in the file.
+            Create the 4 variables and make sure the line is split.
+            Converting the budget variable to a float as well as the box office variable.
+            Create a equation that sets the variable revenue equal to the variable boxOffice - budget variable.
+            Next, create a if statement that sets revenue greater than maxProfit.
+            Make sure maxProfit is equal to revenue.
+            Make sure MaxProfitMovie is equal to movieTitle
+            The except portion for the FileNotFoundError:
+                Output to the user that the file does not exist.
+
+Next, we need to output the movie with the highest profit to the user.
+Then we need to return that variable.
+
+Next, we need to create a function that outputs certain data to the file.
+The parameters include the file to read and write.
+    Set the variable newOutputFile equal to opening the file to read.
+    Next, the program will start reading the code by each line.
+    Create the 4 variables and make sure the line is split.
+    Converting the budget variable to a float as well as the box office variable.
+    Create a equation that sets the variable revenue equal to the variable boxOffice - budget variable.
+    Output the variable newOutputFile, as well as the release date, the movie title and the revenue which is rounded to two decimal places.
+    Making white spaces between each line in the output file.
+    The except portion for the FileNotFoundError:
+                Output to the user that the file does not exist.
+                Making sure we exit the file.
+    Return the function.
+
+Create the main function.
+    Output the purpose of the program to the user which is "The purpose of this program is to output the movie with the highest profit from a list you input."
+    Call the valid input file function.
+    Call the output file function.
+    Call the profit function.
+    Call the output function.
+    Use Return
+Call the main function.
